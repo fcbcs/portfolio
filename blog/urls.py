@@ -20,4 +20,6 @@ from . import views
 #网址规则
 urlpatterns = [
     path('', views.blog_page),
+    path('<int:blog_id>/', views.blog_text),
+
 ] 
